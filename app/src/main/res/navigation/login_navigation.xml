@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_navigation"
+    app:startDestination="@id/welcomFragment">
+
+    <fragment
+        android:id="@+id/welcomFragment"
+        android:name="com.toptech.warkeapplication.ui.activity.fragment.WelcomFragment"
+        android:label="WelcomFragment"
+        tools:layout="@layout/welcome_fragment">
+        <action
+            android:id="@+id/action_welcomFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/common_slide_in_right"
+            app:exitAnim="@anim/common_slide_out_left"
+            app:popEnterAnim="@anim/common_slide_in_left"
+            app:popExitAnim="@anim/common_slide_out_right" />
+        <action
+            android:id="@+id/action_welcomFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <argument
+            android:name="ARGS_NAME"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.toptech.warkeapplication.ui.activity.fragment.loginFragment"
+        android:label="loginFragment"
+        tools:layout="@layout/login_fragment"/>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.toptech.warkeapplication.ui.activity.fragment.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/register_fragment"/>
+
+
+</navigation>
