@@ -5,8 +5,11 @@ buildscript {
 
     ext.lifecycleVersion = '2.2.0-alpha01'
     ext.fragmentVersion = '1.1.0-alpha09'
+    ext.roomVersion = '2.3.0-alpha03'
 
     ext.mmkvVersion = '1.2.11'
+    ext.gsonVersion = '2.8.2'
+    ext.workVersion = '2.1.0-alpha02'
     repositories {
         google()
         mavenCentral()

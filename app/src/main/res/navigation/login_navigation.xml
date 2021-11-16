@@ -20,10 +20,6 @@
         <action
             android:id="@+id/action_welcomFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
-        <argument
-            android:name="ARGS_NAME"
-            app:argType="string"
-            app:nullable="true" />
     </fragment>
 
     <fragment
@@ -35,7 +31,12 @@
         android:id="@+id/registerFragment"
         android:name="com.toptech.warkeapplication.ui.activity.fragment.RegisterFragment"
         android:label="RegisterFragment"
-        tools:layout="@layout/register_fragment"/>
+        tools:layout="@layout/register_fragment">
+        <argument
+            android:name="EMAIL"
+            app:argType="string"
+            android:defaultValue="shichunhua@top-tech.com.cn" />
+    </fragment>
 
 
 </navigation>

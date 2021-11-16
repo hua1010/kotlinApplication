@@ -45,7 +45,7 @@ class WelcomFragment : Fragment() {
             val name = AppPrefsUtils.getString(Constant.SP_USER_NAME)
             val bundle = Bundle()
             bundle.putString(Constant.ARGS_NAME,name)
-            findNavController().navigate(R.id.login_fragment_nav,bundle,navOption)
+            findNavController().navigate(R.id.loginFragment,bundle,navOption)
         }
 
         btnRegister.setOnClickListener {

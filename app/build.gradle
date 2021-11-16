@@ -29,6 +29,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    dataBinding {
+        enabled true
+    }
     buildFeatures {
         viewBinding true
     }
@@ -53,4 +56,14 @@ dependencies {
 
     //DataStore
     implementation "com.tencent:mmkv-static:${mmkvVersion}"
+
+    // room
+    implementation "androidx.room:room-runtime:$rootProject.roomVersion"
+    implementation "androidx.room:room-ktx:$rootProject.roomVersion"
+    kapt "androidx.room:room-compiler:$rootProject.roomVersion"
+    androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"
+
+    //Gson
+    implementation "androidx.work:work-runtime-ktx:$rootProject.workVersion"
+    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
 }
