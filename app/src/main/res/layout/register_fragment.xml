@@ -7,8 +7,7 @@
         <!--需要的viewModel,通过mBinding.vm=mViewMode注入-->
         <variable
             name="model"
-            type="com.toptech.warkeapplication.ui.activity.viewmodel.RegisterModel"
-            />
+            type="com.toptech.warkeapplication.ui.activity.viewmodel.RegisterModel"/>
 
         <variable
             name="activity"

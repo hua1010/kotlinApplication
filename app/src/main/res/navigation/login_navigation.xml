@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/welcomFragment"
         android:name="com.toptech.warkeapplication.ui.activity.fragment.WelcomFragment"
-        android:label="WelcomFragment"
+        android:label="WelcomeFragment"
         tools:layout="@layout/welcome_fragment">
         <action
             android:id="@+id/action_welcomFragment_to_registerFragment"
